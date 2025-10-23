@@ -1,0 +1,15 @@
+services:
+  database:
+    image: mariadb:10.4.30
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - database_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: "yes"
+      TZ: America/Sao_Paulo
+    restart: unless-stopped
+
+volumes:
+  database_data:
