@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="661.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.projetoa3.ToDoController">
+    <stylesheets>
+        <URL value="@todo.css" />
+    </stylesheets>
+   <children>
+      <TextField layoutX="210.0" layoutY="152.0" prefHeight="26.0" prefWidth="176.0" styleClass="textinput" stylesheets="@todo.css" />
+      <Button layoutX="392.0" layoutY="152.0" mnemonicParsing="false" text="Button" />
+      <Pane layoutX="210.0" layoutY="14.0" prefHeight="116.0" prefWidth="242.0" styleClass="pane" stylesheets="@todo.css" />
+      <VBox layoutX="210.0" layoutY="192.0" prefHeight="200.0" prefWidth="242.0" styleClass="mainTasks" stylesheets="@todo.css" />
+   </children>
+
+</AnchorPane>
