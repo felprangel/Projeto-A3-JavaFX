@@ -1,0 +1,17 @@
+.mainFxmlClass {
+    -fx-background-color: #333333;
+}
+
+.pane {
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 20px;
+}
+
+.textinput {
+    -fx-background-color: #666666;
+    -fx-text-fill: #FFFFFF;
+}
+
+.mainTasks {
+    -fx-border-color: red;
+}
