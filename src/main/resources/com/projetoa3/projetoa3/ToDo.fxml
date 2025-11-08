@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import java.net.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="661.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.projetoa3.ToDoController">
     <stylesheets>
         <URL value="@todo.css" />
     </stylesheets>
    <children>
-      <TextField layoutX="210.0" layoutY="152.0" prefHeight="26.0" prefWidth="176.0" styleClass="textinput" stylesheets="@todo.css" />
-      <Button layoutX="392.0" layoutY="152.0" mnemonicParsing="false" text="Button" />
-      <Pane layoutX="210.0" layoutY="14.0" prefHeight="116.0" prefWidth="242.0" styleClass="pane" stylesheets="@todo.css" />
-      <VBox layoutX="210.0" layoutY="192.0" prefHeight="200.0" prefWidth="242.0" styleClass="mainTasks" stylesheets="@todo.css" />
+      <TextField layoutX="159.0" layoutY="146.0" prefHeight="26.0" prefWidth="291.0" styleClass="textinput" stylesheets="@todo.css" />
+      <Button layoutX="452.0" layoutY="139.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-adicionar-32.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Pane layoutX="156.0" layoutY="14.0" prefHeight="116.0" prefWidth="351.0" styleClass="pane" stylesheets="@todo.css" />
+      <VBox layoutX="159.0" layoutY="192.0" prefHeight="200.0" prefWidth="343.0" styleClass="mainTasks" stylesheets="@todo.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="341.0" stylesheets="@todo.css">
+               <styleClass>
+                  <String fx:value="task" />
+                  <String fx:value="task" />
+               </styleClass>
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="327.0" spacing="5.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-círculo-32.png" />
+                           </image></ImageView>
+                        <Label prefHeight="25.0" prefWidth="196.0" text="Task 1" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font></Label>
+                        <Button mnemonicParsing="false" stylesheets="@todo.css">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-lápis-32.png" />
+                                 </image></ImageView>
+                           </graphic></Button>
+                        <Button mnemonicParsing="false" stylesheets="@todo.css">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-lixo-32.png" />
+                                 </image></ImageView>
+                           </graphic></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children></VBox>
    </children>
 
 </AnchorPane>
