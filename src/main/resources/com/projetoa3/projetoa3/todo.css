@@ -13,5 +13,16 @@
 }
 
 .mainTasks {
-    -fx-border-color: red;
+}
+
+.task {
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 10px;
+}
+
+.button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparen;
 }
