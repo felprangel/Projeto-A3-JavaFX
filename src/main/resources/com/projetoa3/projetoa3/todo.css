@@ -13,6 +13,27 @@
 }
 
 .mainTasks {
+    -fx-background-color: #333333;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .track {
+    -fx-background-color: #333333;
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .thumb {
+    -fx-background-color: #666666;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .increment-button, .scroll-pane .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: #333333;
 }
 
 .task {
