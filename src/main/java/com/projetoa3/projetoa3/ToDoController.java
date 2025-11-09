@@ -44,7 +44,6 @@ public class ToDoController {
             taskListContainer.getChildren().add(taskItem);
 
             taskInput.clear();
-
         } catch (IOException e) {
             e.printStackTrace();
             System.err.println("Erro ao carregar TaskItem.fxml");
