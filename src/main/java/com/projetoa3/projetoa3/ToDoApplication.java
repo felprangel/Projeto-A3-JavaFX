@@ -13,7 +13,7 @@ public class ToDoApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(ToDoApplication.class.getResource("ToDo.fxml"));
         // TODO: verificar melhor tamanho pra janela
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        stage.setTitle("ToDo");
         stage.setScene(scene);
         stage.show();
     }
