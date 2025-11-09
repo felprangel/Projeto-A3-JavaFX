@@ -40,6 +40,11 @@
                   <Font name="System Bold" size="31.0" />
                </font>
             </Label>
+            <Label fx:id="taskCount1" layoutX="43.0" layoutY="36.0" text="ToDo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
          </children></Pane>
       <ScrollPane layoutX="143.0" layoutY="186.0" prefHeight="200.0" prefWidth="365.0" styleClass="mainTasks" stylesheets="@todo.css">
         <content>
