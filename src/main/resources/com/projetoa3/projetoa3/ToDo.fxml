@@ -13,7 +13,7 @@
         <URL value="@todo.css" />
     </stylesheets>
    <children>
-      <TextField layoutX="159.0" layoutY="146.0" prefHeight="26.0" prefWidth="291.0" styleClass="textinput" stylesheets="@todo.css" />
+      <TextField fx:id="taskInput" layoutX="159.0" layoutY="146.0" prefHeight="26.0" prefWidth="291.0" styleClass="textinput" stylesheets="@todo.css" />
       <Button layoutX="452.0" layoutY="139.0" mnemonicParsing="false" onAction="#addTask">
          <graphic>
             <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
@@ -41,43 +41,16 @@
                </font>
             </Label>
          </children></Pane>
-      <VBox layoutX="159.0" layoutY="192.0" prefHeight="200.0" prefWidth="343.0" styleClass="mainTasks" stylesheets="@todo.css">
-         <children>
-            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="341.0" stylesheets="@todo.css">
-               <styleClass>
-                  <String fx:value="task" />
-                  <String fx:value="task" />
-               </styleClass>
+      <ScrollPane layoutX="143.0" layoutY="186.0" prefHeight="200.0" prefWidth="365.0" styleClass="mainTasks" stylesheets="@todo.css">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="373.0" styleClass="mainTasks" stylesheets="@todo.css">
                <children>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="327.0" spacing="5.0">
-                     <children>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icons8-círculo-32.png" />
-                           </image></ImageView>
-                        <Label prefHeight="25.0" prefWidth="196.0" text="Task 1" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="23.0" />
-                           </font></Label>
-                        <Button mnemonicParsing="false" stylesheets="@todo.css">
-                           <graphic>
-                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@icons8-lápis-32.png" />
-                                 </image></ImageView>
-                           </graphic></Button>
-                        <Button mnemonicParsing="false" stylesheets="@todo.css">
-                           <graphic>
-                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@icons8-lixo-32.png" />
-                                 </image></ImageView>
-                           </graphic></Button>
-                     </children>
-                  </HBox>
+                  <VBox fx:id="taskListContainer" layoutX="7.0" prefHeight="200.0" prefWidth="342.0" styleClass="mainTasks" stylesheets="@todo.css">
+                  </VBox>
                </children>
-            </HBox>
-         </children></VBox>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
    </children>
 
 </AnchorPane>
