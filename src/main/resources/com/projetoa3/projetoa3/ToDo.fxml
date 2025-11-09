@@ -22,7 +22,7 @@
                   <Font name="System Bold" size="31.0" />
                </font>
             </Label>
-            <Label layoutX="256.0" layoutY="36.0" text="0" textFill="WHITE">
+            <Label fx:id="taskCompletedCount" layoutX="256.0" layoutY="36.0" text="0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="31.0" />
                </font>

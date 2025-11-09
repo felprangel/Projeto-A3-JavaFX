@@ -6,18 +6,22 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox alignment="CENTER" prefHeight="44.0" prefWidth="341.0" stylesheets="@todo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.projetoa3.TaskItemController">
+<HBox fx:id="taskItemBox" alignment="CENTER" prefHeight="44.0" prefWidth="341.0" stylesheets="@todo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.projetoa3.TaskItemController">
     <styleClass>
         <String fx:value="task" />
     </styleClass>
     <children>
         <HBox alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="327.0" spacing="5.0">
             <children>
-                <ImageView fx:id="statusIcon" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@icons8-círculo-32.png" />
-                    </image>
-                </ImageView>
+            <Button mnemonicParsing="false" onAction="#toggleCompletion">
+               <graphic>
+                      <ImageView fx:id="statusIcon" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@icons8-círculo-32.png" />
+                          </image>
+                      </ImageView>
+               </graphic>
+            </Button>
 
                 <Label fx:id="taskLabel" prefHeight="25.0" prefWidth="196.0" text="Nova Tarefa" textFill="WHITE">
                     <font>
@@ -34,7 +38,7 @@
                         </ImageView>
                </graphic></Button>
 
-                <Button mnemonicParsing="false" styleClass="delete-button">
+                <Button mnemonicParsing="false" onAction="#deleteTask" styleClass="delete-button">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                             <image>
