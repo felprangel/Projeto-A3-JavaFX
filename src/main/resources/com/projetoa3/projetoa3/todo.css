@@ -41,6 +41,11 @@
     -fx-border-radius: 10px;
 }
 
+.completed-task {
+    -fx-strikethrough: true;
+    -fx-opacity: 0.7;
+}
+
 .button {
     -fx-border-color: transparent;
     -fx-border-width: 0;
