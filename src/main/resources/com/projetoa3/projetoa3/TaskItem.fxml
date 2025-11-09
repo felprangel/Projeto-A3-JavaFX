@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<?import java.lang.*?>
 
-<HBox alignment="CENTER" prefHeight="44.0" prefWidth="341.0"
-      stylesheets="@todo.css"
-      xmlns="http://javafx.com/javafx/17.0.12"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.projetoa3.projetoa3.TaskItemController">
+<HBox alignment="CENTER" prefHeight="44.0" prefWidth="341.0" stylesheets="@todo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetoa3.projetoa3.TaskItemController">
     <styleClass>
         <String fx:value="task" />
     </styleClass>
@@ -25,19 +21,16 @@
 
                 <Label fx:id="taskLabel" prefHeight="25.0" prefWidth="196.0" text="Nova Tarefa" textFill="WHITE">
                     <font>
-                        <Font name="System Bold" size="23.0" />
+                        <Font name="System Bold" size="19.0" />
                     </font>
                 </Label>
 
-                <Button mnemonicParsing="false" styleClass="edit-button">
-                    <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons8-lápis-32.png" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
+                <Button mnemonicParsing="false" styleClass="edit-button" />
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@icons8-lápis-32.png" />
+                      </image>
+                  </ImageView>
 
                 <Button mnemonicParsing="false" styleClass="delete-button">
                     <graphic>
