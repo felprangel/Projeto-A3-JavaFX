@@ -25,12 +25,14 @@
                     </font>
                 </Label>
 
-                <Button mnemonicParsing="false" styleClass="edit-button" />
-                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                      <image>
-                          <Image url="@icons8-lápis-32.png" />
-                      </image>
-                  </ImageView>
+                <Button mnemonicParsing="false" styleClass="edit-button">
+               <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons8-lápis-32.png" />
+                            </image>
+                        </ImageView>
+               </graphic></Button>
 
                 <Button mnemonicParsing="false" styleClass="delete-button">
                     <graphic>
