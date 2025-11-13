@@ -11,7 +11,7 @@
         <String fx:value="task" />
     </styleClass>
     <children>
-        <HBox alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="327.0" spacing="5.0">
+        <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="327.0" spacing="5.0" HBox.hgrow="ALWAYS">
             <children>
             <Button mnemonicParsing="false" onAction="#toggleCompletion">
                <graphic>
@@ -23,20 +23,11 @@
                </graphic>
             </Button>
 
-                <Label fx:id="taskLabel" prefHeight="25.0" prefWidth="196.0" text="Nova Tarefa" textFill="WHITE">
+                <Label fx:id="taskLabel" prefHeight="25.0" prefWidth="196.0" text="Nova Tarefa" textFill="WHITE" HBox.hgrow="ALWAYS">
                     <font>
                         <Font name="System Bold" size="19.0" />
                     </font>
                 </Label>
-
-                <Button mnemonicParsing="false" styleClass="edit-button">
-               <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons8-lápis-32.png" />
-                            </image>
-                        </ImageView>
-               </graphic></Button>
 
                 <Button mnemonicParsing="false" onAction="#deleteTask" styleClass="delete-button">
                     <graphic>
