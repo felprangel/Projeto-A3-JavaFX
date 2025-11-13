@@ -23,7 +23,7 @@
                </graphic>
             </Button>
 
-                <Label fx:id="taskLabel" prefHeight="25.0" prefWidth="196.0" text="Nova Tarefa" textFill="WHITE" HBox.hgrow="ALWAYS">
+                <Label fx:id="taskLabel" prefHeight="28.0" prefWidth="240.0" text="Nova Tarefa" textFill="WHITE" HBox.hgrow="ALWAYS">
                     <font>
                         <Font name="System Bold" size="19.0" />
                     </font>
