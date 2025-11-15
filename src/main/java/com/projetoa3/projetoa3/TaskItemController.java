@@ -28,8 +28,7 @@ public class TaskItemController {
 
     public void updateUIFromTask() {
         if (task.isCompleted()) {
-            // Mudar ícone para 'concluído' (ex: um visto)
-            statusIcon.setImage(new Image(getClass().getResourceAsStream("icons8-visto-32.png")));
+            statusIcon.setImage(new Image(getClass().getResourceAsStream("icons8-ok-32.png")));
             taskLabel.getStyleClass().add("completed-task");
         } else {
             statusIcon.setImage(new Image(getClass().getResourceAsStream("icons8-círculo-32.png")));
