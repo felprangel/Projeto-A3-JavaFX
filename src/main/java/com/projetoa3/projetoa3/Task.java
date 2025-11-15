@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class Task {
     private int id;
-    private String description;
+    private final String description;
     private boolean isCompleted;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
