@@ -6,20 +6,16 @@ public class Task {
     private int id;
     private final String description;
     private boolean isCompleted;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 
     public Task(String description) {
         this.description = description;
         this.isCompleted = false;
     }
 
-    public Task(int id, String description, boolean isCompleted, LocalDateTime createdAt, LocalDateTime updatedAt) {
+    public Task(int id, String description, boolean isCompleted) {
         this.id = id;
         this.description = description;
         this.isCompleted = isCompleted;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
     }
 
     public boolean isCompleted() {
