@@ -3,7 +3,6 @@ package com.projetoa3.projetoa3;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.time.LocalDateTime;
 
 public class TaskRepository {
     public Task create(Task task) {
@@ -57,9 +56,7 @@ public class TaskRepository {
                 Task task = new Task(
                         resultSet.getInt("id"),
                         resultSet.getString("description"),
-                        resultSet.getBoolean("is_completed"),
-                        resultSet.getTimestamp("created_at").toLocalDateTime(),
-                        resultSet.getTimestamp("updated_at").toLocalDateTime()
+                        resultSet.getBoolean("is_completed")
                 );
                 tasks.add(task);
             }
